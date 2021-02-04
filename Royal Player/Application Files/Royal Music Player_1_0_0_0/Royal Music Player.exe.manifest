@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Royal Music Player.exe" version="1.0.0.0" publicKeyToken="1534aca3d9126329" language="neutral" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="Immagine-2021-02-04-185958.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Royal Music Player" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="Royal Music Player.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opzioni manifesto Controllo dell'account utente
+          Se si vuole modificare il livello di Controllo dell'account utente di Windows, sostituire il
+          nodo requestedExecutionLevel con uno dei seguenti.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se si vuole usare Virtualizzazione file system e registro di sistema per la 
+         compatibilità con le versioni precedenti, eliminare il nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MPD2l6gTMYYjqEUUckUpQ7JBGMJaSDlJvQ1bTse+qR8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ASsQXxth669DTeQDq27BZORXHHvXiEShgXigLcOPy5E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Royal Music Player.exe" size="526816">
+      <assemblyIdentity name="Royal Music Player" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4T/3mU0nonKEQ9Yz8arHJ2zcV1RCbBrQvrJWgyaRUXE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Immagine-2021-02-04-185958.ico" size="247166">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v77Z6sMqugoeD9WCtaSiP9UesC0rv0VFhtPWm7nEBbA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Royal Music Player.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VDy5/VrQni+RSOb/6uEMWMc6bGQEaa2e2UdeWG+KK1I=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-61IR5JUP\mguss" issuerKeyHash="632fd288bc1f07a227fe512832caf1948e5c4d04" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1/K+vjT9XaIknVXrnHexwGGN9OFX4ETW9bReByigYfE=</DigestValue></Reference></SignedInfo><SignatureValue>tm5uqOBrTPjly0TdsAbd5mnD+C8re8j1exr7e5dU1yF3yfCexxjskZgxnmicbYLA702pSni7KBRwBXnO7BrPg0+clFNcOoOnWbWJEhwanZWqzr7xxRyyLWkx7vs2EtjjE1KQkhZC1lSsnkT/sCeAgyUUzIgceu9a29EiwpcMcBQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xu828qA7rFx+EVEbrT40wjN+pNskEzidDZ7pLIoG9LlcGNneRVh7iqJp71AApiVuoCdRcy6LKo7VOhcpgvYJ9Q4BtSYHe5MOknIqUeP+VQh6cp3XJQQqapUqivSyWUQ18wkdRcCR3Hq2axdL1T6ai1KQgFNVODWY6NJFYCALqt0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f161a028075eb4f5d644e057e1f48d61c0b1779ceb559d24a25dfd34bebef2d7" Description="" Url=""><as:assemblyIdentity name="Royal Music Player.exe" version="1.0.0.0" publicKeyToken="1534aca3d9126329" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-61IR5JUP\mguss</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>beSbWDNgrMbdbi8c7P2NwcpffXFpVfEvL0mfR33bkos=</DigestValue></Reference></SignedInfo><SignatureValue>pzOQlGPnfDq9yXTR4UmFZNOvSRaK2YELAXcevyr+xnq0uMftj+FtjXTQyVzsS8Y+0ee+gzDoji6fWhvYxOYYWpFw7otMDbNqjv7HlqeRJp4MGxTEDxuWK0j9y8CctO7sbLb+BuvhohZicYRHHmLJXVQeEv9tQZRzVvYMIXCz3Js=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xu828qA7rFx+EVEbrT40wjN+pNskEzidDZ7pLIoG9LlcGNneRVh7iqJp71AApiVuoCdRcy6LKo7VOhcpgvYJ9Q4BtSYHe5MOknIqUeP+VQh6cp3XJQQqapUqivSyWUQ18wkdRcCR3Hq2axdL1T6ai1KQgFNVODWY6NJFYCALqt0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQOvk2aHYCj5ZHP5H0VmrzfTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQA2ADEASQBSADUASgBVAFAAXABtAGcAdQBzAHMwHhcNMjEwMjA0MTgwMjA3WhcNMjIwMjA1MDAwMjA3WjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQA2ADEASQBSADUASgBVAFAAXABtAGcAdQBzAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMbvNvKgO6xcfhFRG60+NMIzfqTbJBM4nQ2e6SyKBvS5XBjZ3kVYe4qiae9QAKYlbqAnUXMuiyqO1ToXKYL2CfUOAbUmB3uTDpJyKlHj/lUIenKd1yUEKmqVKor0sllENfMJHUXAkdx6tmsXS9U+motSkIBTVTg1mOjSRWAgC6rdAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAR1rokEWm+dfoag6C+UatVzfNG4miYxurmkeJu8oEoWb/aVhQINREC7b0KAmc4abHI6WH6gRxUfsinNrWyvUmkgkYz0a4NLpVD6riW/Folcb2apcxIwvKSuxUJuBzjKk9TlZ5Vbz6mASv8rlFfTSVZd5zlw37HVN2pOZBl9BvGHU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
